@@ -168,6 +168,6 @@
 		@apply border-border outline-ring/50;
 	}
 	body {
-		@apply flex justify-center bg-background text-foreground;
+		@apply flex-col justify-center bg-background text-foreground;
 	}
 }
