@@ -6,7 +6,9 @@
 	const props: RadioProps = $props();
 </script>
 
-<label class="border border-foreground rounded-full inline-flex aspect-square h-6 cursor-pointer items-center has-[:checked]:bg-primary justify-center">
+<label
+	class="inline-flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border border-foreground has-checked:bg-primary"
+>
 	<input type="checkbox" class=" hidden appearance-none checked:bg-accent" />
 	<span class="flex items-center justify-center text-foreground">{props.text}</span>
 </label>
