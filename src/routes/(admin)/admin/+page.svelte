@@ -9,27 +9,73 @@
 		public_folder: '/media',
 		collections: [
 			{
-				name: 'posts',
-				label: 'Posts',
-				folder: 'content/posts',
+				name: 'recipes',
+				label: 'Recipes',
+				folder: 'content/recipes',
 				fields: [
 					{ label: 'Title', name: 'title', widget: 'string' },
+					{ label: 'Hero image', name: 'hero_image', widget: 'image' },
+					{ label: 'Main image', name: 'main_image', widget: 'image' },
+					{
+						label: 'Sub images',
+						name: 'sub_images',
+						widget: 'list',
+						fields: [{ label: 'Sub image', name: 'sub_image', widget: 'image' }]
+					},
 					{ label: 'Created Date', name: 'created_date', widget: 'datetime' },
 					{ label: 'Updated Date', name: 'updated_date', widget: 'datetime' },
 					{ label: 'Description', name: 'description', widget: 'markdown' },
+					{ label: 'Prep time (min)', name: 'prep_time', widget: 'number' },
+					{ label: 'Cook/Bake time (min)', name: 'cook_time', widget: 'number' },
+					{ label: 'Yield', name: 'yield', widget: 'text' },
+
+					{
+						label: 'Ingredients',
+						name: 'ingredients',
+						widget: 'list',
+						fields: [
+							{
+								label: 'Part title',
+								name: 'part_title',
+								widget: 'text'
+							},
+							{
+								label: 'Part',
+								name: 'part',
+								widget: 'list',
+								fields: [
+									{
+										label: "Ingredient (don't add number)",
+										name: 'ingredient',
+										widget: 'richtext'
+									}
+								]
+							}
+						]
+					},
 					{
 						label: 'Instructions',
 						name: 'instructions',
 						widget: 'list',
 						fields: [
-							{ label: "Instruction (don't add number)", name: 'instruction', widget: 'richtext' }
+							{
+								label: 'Part title',
+								name: 'part_title',
+								widget: 'text'
+							},
+							{
+								label: 'Part',
+								name: 'part',
+								widget: 'list',
+								fields: [
+									{
+										label: "Instruction (don't add number)",
+										name: 'instruction',
+										widget: 'richtext'
+									}
+								]
+							}
 						]
-					},
-					{
-						label: 'Ingredients',
-						name: 'ingredients',
-						widget: 'list',
-						fields: [{ label: 'Ingredient', name: 'ingredient', widget: 'richtext' }]
 					},
 					{
 						label: 'Tags',
