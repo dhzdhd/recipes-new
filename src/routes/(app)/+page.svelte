@@ -2,6 +2,7 @@
 	import Radio from '$lib/components/Radio.svelte';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import Search from '$lib/components/Search.svelte';
+	import Carousel from '@/components/Carousel.svelte';
 </script>
 
 <header class="flex h-16 items-center justify-center">
@@ -62,6 +63,9 @@
 			<div id="photo-grid" class="grid h-full w-full grid-cols-3 grid-rows-3 gap-2">
 				<div class="col-span-3 row-span-2">
 					<img src="/image.avif" alt="Food" />
+				</div>
+				<div class="col-span-3 row-span-2">
+					<Carousel />
 				</div>
 				<!-- {#each ['/image.avif', '/image.avif', '/image.avif'] as src, idx (src)}
 					<div class="h-full w-full snap-center">

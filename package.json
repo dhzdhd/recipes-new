@@ -23,6 +23,7 @@
 		"@eslint/js": "^10.0.1",
 		"@fontsource-variable/figtree": "^5.3.0",
 		"@fontsource-variable/roboto-slab": "^5.3.0",
+		"@internationalized/date": "^3.12.3",
 		"@playwright/test": "^1.60.0",
 		"@storybook/addon-a11y": "^10.5.2",
 		"@storybook/addon-docs": "^10.5.2",
@@ -37,7 +38,9 @@
 		"@types/node": "^22",
 		"@vitest/browser-playwright": "^4.1.8",
 		"@vitest/coverage-v8": "^4.1.8",
+		"bits-ui": "^2.18.2",
 		"clsx": "^2.1.1",
+		"embla-carousel-svelte": "^8.6.0",
 		"eslint": "^10.4.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-storybook": "^10.5.2",
@@ -62,7 +65,7 @@
 		"vitest-browser-svelte": "^2.1.1"
 	},
 	"dependencies": {
-		"@lucide/svelte": "^1.31.0",
+		"@lucide/svelte": "^1.33.0",
 		"@sveltia/cms": "^0.172.1",
 		"mode-watcher": "^1.1.0"
 	}

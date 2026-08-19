@@ -4,7 +4,7 @@
 
 	const config: CmsConfig = {
 		load_config_file: false,
-		backend: { name: 'test-repo' },
+		backend: { name: 'github', repo: 'dhzdhd/recipes' },
 		media_folder: 'static/media',
 		public_folder: '/media',
 		collections: [
