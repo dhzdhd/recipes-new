@@ -77,7 +77,7 @@
 	</section>
 	<section id="instructions-and-ingredients" class="flex w-full items-center justify-center py-20">
 		<div class="grid w-full max-w-6xl grid-cols-10 grid-rows-1 gap-20">
-			<aside class="col-span-3">
+			<aside class="col-span-3 pt-20">
 				<h1 class="text-3xl">Ingredients</h1>
 				<div>
 					<!-- {#each ['/image.avif', '/image.avif', '/image.avif'] as src, idx (src)}

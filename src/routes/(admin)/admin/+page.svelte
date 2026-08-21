@@ -35,13 +35,13 @@
 						widget: 'list',
 						fields: [
 							{
-								label: 'Part title',
-								name: 'part_title',
+								label: 'Group title',
+								name: 'group_title',
 								widget: 'text'
 							},
 							{
-								label: 'Part',
-								name: 'part',
+								label: 'Group',
+								name: 'group',
 								widget: 'list',
 								fields: [
 									{
@@ -59,13 +59,13 @@
 						widget: 'list',
 						fields: [
 							{
-								label: 'Part title',
-								name: 'part_title',
+								label: 'Group title',
+								name: 'group_title',
 								widget: 'text'
 							},
 							{
-								label: 'Part',
-								name: 'part',
+								label: 'Group',
+								name: 'group',
 								widget: 'list',
 								fields: [
 									{
@@ -86,12 +86,6 @@
 						fields: [{ label: 'Tag', name: 'tag', widget: 'relation', collection: 'tags' }]
 					}
 				]
-			},
-			{
-				name: 'tags',
-				label: 'Tags',
-				folder: 'content/tags',
-				fields: [{ label: 'Title', name: 'title', widget: 'string' }]
 			}
 		]
 	};
