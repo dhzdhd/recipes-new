@@ -32,5 +32,6 @@ instructions:
     group:
       - instruction: Take curd in a bowl and whisk it
       - instruction: Add cucumber garnishing
-tags: []
+tags:
+  - tag: food
 ---

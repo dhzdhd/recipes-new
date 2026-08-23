@@ -1,40 +1,27 @@
 <script>
 	import Radio from '$lib/components/Radio.svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
-	import Search from '$lib/components/Search.svelte';
+
 	import Carousel from '@/components/Carousel.svelte';
 </script>
 
-<header class="flex h-16 items-center justify-center">
-	<div class="flex w-full max-w-6xl items-center justify-between">
-		<nav>
-			<ul class="flex gap-3 font-heading uppercase">
-				<li><a href="/"> Home </a></li>
-				<li><a href="/"> Random </a></li>
-			</ul>
-		</nav>
-		<div class="flex gap-5 font-heading">
-			<ThemeToggle />
-			<Search />
-		</div>
-	</div>
-</header>
-<main class="flex flex-col gap-20">
-	<section id="hero" class="relative max-h-176 w-full overflow-hidden">
+<main class="flex flex-col gap-5 pb-24 md:gap-16">
+	<section id="hero" class="relative w-full overflow-hidden md:max-h-176">
 		<video src="/hero.mp4" autoplay class="left-0 w-dvw object-cover">
 			<track kind="captions" />
 		</video>
 		<div
-			class="justify-left absolute top-0 left-0 flex h-176 min-w-dvw items-center justify-center bg-black/50"
+			class="justify-left absolute top-0 left-0 flex h-52 min-w-dvw items-center justify-center bg-black/50 md:h-176"
 		>
-			<div class="min-w-6xl">
-				<h1 class="max-w-md text-6xl font-semibold text-white">Big and Bubbly Focaccia</h1>
+			<div class="md:min-w-6xl">
+				<h1 class="max-w-xs text-3xl font-semibold text-white md:max-w-md md:text-6xl">
+					Big and Bubbly Focaccia
+				</h1>
 			</div>
 		</div>
 	</section>
-	<section id="meta" class="flex h-180 w-full items-center justify-center">
-		<div class="flex w-full max-w-6xl gap-20">
-			<div class="grid w-full grid-cols-3 grid-rows-5 gap-10">
+	<section id="meta" class="flex w-full items-center justify-center md:h-180">
+		<div class="flex w-full max-w-6xl flex-col gap-20 px-4 md:flex-row">
+			<div class="flex w-full grid-cols-3 grid-rows-5 flex-col gap-10 md:grid">
 				<p class="col-span-3 row-span-3 font-heading text-lg">
 					Why bake one big cheesecake when you can hand a personal-sized treat to everyone at the
 					table? This mini cheesecake recipe is small but mighty, with a buttery graham cracker
@@ -75,8 +62,11 @@
 			</div>
 		</div>
 	</section>
-	<section id="instructions-and-ingredients" class="flex w-full items-center justify-center py-20">
-		<div class="grid w-full max-w-6xl grid-cols-10 grid-rows-1 gap-20">
+	<section
+		id="instructions-and-ingredients"
+		class="flex w-full items-center justify-center md:flex-col md:py-20"
+	>
+		<div class="flex w-full max-w-6xl grid-cols-10 grid-rows-1 flex-col gap-20 md:grid">
 			<aside class="col-span-3 pt-20">
 				<h1 class="text-3xl">Ingredients</h1>
 				<div>
@@ -102,8 +92,12 @@
 	<section id="recommended" class="flex w-full items-center justify-center">
 		<div class="w-full max-w-6xl justify-center">
 			<h1 class="w-full pb-10 text-center text-4xl">Recommended Recipes</h1>
-			<div class="grid grid-cols-4">
-				<a href="/" id="recipe-card" class="group/link flex flex-col gap-10 border pb-10">
+			<div class="flex grid-cols-4 flex-col md:grid">
+				<a
+					href="/"
+					id="recipe-card"
+					class="group/link mx-4 flex flex-col gap-10 border pb-10 md:mx-0"
+				>
 					<img class="group-hover/link:opacity-70" src="/image.avif" alt="" />
 					<div class="flex flex-col gap-2">
 						<h3 class="text-center font-heading text-sm">CHEESECAKE</h3>

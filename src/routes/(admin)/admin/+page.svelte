@@ -83,7 +83,7 @@
 						widget: 'list',
 						allow_duplicate: false,
 						required: false,
-						fields: [{ label: 'Tag', name: 'tag', widget: 'relation', collection: 'tags' }]
+						fields: [{ label: 'Tag', name: 'tag', widget: 'text' }]
 					}
 				]
 			}

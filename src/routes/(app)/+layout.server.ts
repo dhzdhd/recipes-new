@@ -3,8 +3,10 @@ import * as fs from 'node:fs';
 import type { Recipe, IngredientGroup, InstructionGroup } from '@/types';
 import YAML from 'yaml';
 
+export const prerender = true;
+
 const stripDashes = (raw: string): string => {
-	return raw.replace(/\\-{3}/g, '');
+	return raw.replace(/^-{3}$/gm, '');
 };
 
 const parseRecipe = (raw: string): Recipe => {
@@ -37,7 +39,7 @@ const parseRecipe = (raw: string): Recipe => {
 				} satisfies InstructionGroup;
 			}
 		),
-		tags: parsed['tags']
+		tags: parsed['tags'].map((tag: { tag: string }) => tag['tag'])
 	} satisfies Recipe;
 };
 
