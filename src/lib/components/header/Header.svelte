@@ -13,8 +13,8 @@
 			</ul>
 		</nav>
 		<div class="flex w-full max-w-xl gap-5 px-4 font-heading md:px-0">
-			<ThemeToggle />
 			<Search />
+			<ThemeToggle />
 		</div>
 	</div>
 </header>

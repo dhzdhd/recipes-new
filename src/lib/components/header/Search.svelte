@@ -5,7 +5,7 @@
 
 <InputGroup.Root>
 	<InputGroup.Input placeholder="Search recipes" />
-	<InputGroup.Addon align="inline-end">
-		<InputGroup.Button variant="default"><Arrow /></InputGroup.Button>
+	<InputGroup.Addon class="h-full p-0" align="inline-end">
+		<InputGroup.Button variant="default" class="h-full w-10"><Arrow /></InputGroup.Button>
 	</InputGroup.Addon>
 </InputGroup.Root>
